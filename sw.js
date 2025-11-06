@@ -4,7 +4,6 @@ const CACHE_NAME = 'pwa-simple-cache-v1';
 // Pliki, które chcemy przechować w pamięci podręcznej (tzw. "App Shell")
 // Zaktualizuj tę listę o wszystkie zasoby, które są krytyczne dla Twojej aplikacji
 const PLIKI_DO_CACHE = [
-  './', // Strona główna
   'index.html',
   'app.js',
   'manifest.json',
