@@ -2,7 +2,7 @@
   "name": "Prosta Aplikacja PWA",
   "short_name": "ProstaPWA",
   "description": "Prosty przykład aplikacji PWA.",
-  "start_url": "./",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#007bff",
