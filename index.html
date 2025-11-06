@@ -1,0 +1,63 @@
+
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Tytuł Aplikacji -->
+    <title>Prosta Aplikacja PWA</title>
+    
+    <!-- Link do Manifestu -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Meta tagi dla PWA (kolor paska w Chrome, wsparcie dla iOS) -->
+    <meta name="theme-color" content="#007bff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Prosta PWA">
+    
+    <!-- Link do ikony dla urządzeń Apple (opcjonalnie, ale dobrze mieć) -->
+    <!-- Pamiętaj, aby podmienić 'ikonka.png' na odpowiednią grafikę 180x180 -->
+    <link rel="apple-touch-icon" href="ikonka.png">
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #007bff;
+        }
+        p#offline-status {
+            font-weight: bold;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Witaj w mojej aplikacji PWA!</h1>
+        <p>To jest prosta aplikacja, która działa również w trybie offline.</p>
+        <p>Spróbuj wyłączyć połączenie internetowe i odświeżyć stronę.</p>
+        
+        <!-- Ten paragraf będzie wypełniony przez app.js -->
+        <p id="offline-status"></p>
+    </div>
+
+    <!-- Załadowanie skryptu aplikacji -->
+    <script src="app.js"></script>
+</body>
+</html>
